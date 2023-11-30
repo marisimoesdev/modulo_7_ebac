@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px; /*largura máxima da pág*/
+    width: 100%; /*ocupação do conteúdo da página*/
+}
+
+header{
+    padding: 8px;
+    background-color: orange;
+    text-align: center; /*centralizando o texto*/
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+}
+
+.container, input, button{
+    display: block;
+}
+
+input, button, p{
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 300px;
+}
+
+input:focus{ /*quando o input estiver selecionado*/
+    outline-color: orange; /*cor da borda do input*/
+}
+
+button{
+    cursor: pointer; /*quando o mouse passar por cima do botão o cursor vai mudar de setinha pra mãozinha*/
+    background-color: orange;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /*colcando negrito*/
+}
+
+form button:hover{ /*efeito pra quando o cursor do mouse passar*/
+    background-color: rgb(214, 152, 36);
+}
+
+.div-formulario{ 
+    display: flex;
+    justify-content: center; /*colocando no centro da página de forma vertical*/
+    height: 500px; /*altura*/
+    align-items: center; /*colocando no centro da página de forma horizontal*/
+}
+
+.erro, .certa { 
+    background-color: red;
+    padding: 8px;
+    display: none; /*sumindo com as mensagens para que as mesmas apareçam somente quando necessário*/
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-align: center;/*centralizando o texto*/
+}
+
+.certa {
+    background-color: green;
+}

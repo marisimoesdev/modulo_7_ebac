@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="./main.css"> <!--chamando o css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet"><!--google fonts-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário de Média da EBAC</h1>
+        </header>
+    </div>
+    <section>
+        <div class="container">
+            <div class="div-formulario"><!--div criada para acertar o posicionamento do formulário no css-->
+                <form id="formulario">
+                    <h2>Média</h2>
+                    <input type="number" id="numeroMenor" required placeholder="número menor"/>
+                    <input type="number" id="numeroMaior" required placeholder="número maior"/>
+                    <p class="erro"></p> <!--classe criada para a mensagem de erro-->
+                    <p class="certa"></p> <!--classe criada para a mensagem de sucesso-->
+                    <button type="submit" id="btnMedia">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script> <!--chamando o javascript-->
+</body>
+</html>
